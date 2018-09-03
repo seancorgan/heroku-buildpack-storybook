@@ -13,8 +13,8 @@ then
   echo '       Overwriting existing `static.json`'
 fi
 
-echo '{ "root": "build/" }' > static.json
+echo '{ "root": "storybook-static/" }' > static.json
 
 export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
 
-npm run build-storybook
+npm run storybook:build
